@@ -11,6 +11,14 @@
 		0A6D29D42B3C639400091307 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D29D32B3C639400091307 /* ContentView.swift */; };
 		0A6D29D62B3C639700091307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D29D52B3C639700091307 /* Assets.xcassets */; };
 		0A6D29D92B3C639700091307 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D29D82B3C639700091307 /* Preview Assets.xcassets */; };
+		0A6D29E32B3C647500091307 /* onnxruntime in Frameworks */ = {isa = PBXBuildFile; productRef = 0A6D29E22B3C647500091307 /* onnxruntime */; };
+		0A6D29E62B3C64CA00091307 /* OpenCV in Frameworks */ = {isa = PBXBuildFile; productRef = 0A6D29E52B3C64CA00091307 /* OpenCV */; };
+		0A6D29E92B3C653E00091307 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D29E82B3C653E00091307 /* ContentViewModel.swift */; };
+		0A6D29EB2B3C655A00091307 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D29EA2B3C655A00091307 /* AudioPlayer.swift */; };
+		0A6D29ED2B3C657000091307 /* AudioExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D29EC2B3C657000091307 /* AudioExtractor.swift */; };
+		0A6D29EF2B3C658400091307 /* OpenCVApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D29EE2B3C658400091307 /* OpenCVApi.swift */; };
+		0A6D29F12B3C659800091307 /* PreprocessAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D29F02B3C659800091307 /* PreprocessAudio.swift */; };
+		0A6D29F32B3C65AD00091307 /* NoiseSuppressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D29F22B3C65AD00091307 /* NoiseSuppressor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,15 @@
 		0A6D29D32B3C639400091307 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A6D29D52B3C639700091307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A6D29D82B3C639700091307 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A6D29DF2B3C641800091307 /* dnn_model_2.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = dnn_model_2.onnx; sourceTree = "<group>"; };
+		0A6D29E02B3C641900091307 /* dnn_model_1.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = dnn_model_1.onnx; sourceTree = "<group>"; };
+		0A6D29E72B3C651900091307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0A6D29E82B3C653E00091307 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		0A6D29EA2B3C655A00091307 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		0A6D29EC2B3C657000091307 /* AudioExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioExtractor.swift; sourceTree = "<group>"; };
+		0A6D29EE2B3C658400091307 /* OpenCVApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVApi.swift; sourceTree = "<group>"; };
+		0A6D29F02B3C659800091307 /* PreprocessAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreprocessAudio.swift; sourceTree = "<group>"; };
+		0A6D29F22B3C65AD00091307 /* NoiseSuppressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseSuppressor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6D29E32B3C647500091307 /* onnxruntime in Frameworks */,
+				0A6D29E62B3C64CA00091307 /* OpenCV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +70,17 @@
 		0A6D29D02B3C639400091307 /* DTLNSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				0A6D29E72B3C651900091307 /* Info.plist */,
+				0A6D29E02B3C641900091307 /* dnn_model_1.onnx */,
+				0A6D29DF2B3C641800091307 /* dnn_model_2.onnx */,
 				0A6D29D12B3C639400091307 /* DTLNSampleAppApp.swift */,
 				0A6D29D32B3C639400091307 /* ContentView.swift */,
+				0A6D29E82B3C653E00091307 /* ContentViewModel.swift */,
+				0A6D29EA2B3C655A00091307 /* AudioPlayer.swift */,
+				0A6D29EC2B3C657000091307 /* AudioExtractor.swift */,
+				0A6D29EE2B3C658400091307 /* OpenCVApi.swift */,
+				0A6D29F02B3C659800091307 /* PreprocessAudio.swift */,
+				0A6D29F22B3C65AD00091307 /* NoiseSuppressor.swift */,
 				0A6D29D52B3C639700091307 /* Assets.xcassets */,
 				0A6D29D72B3C639700091307 /* Preview Content */,
 			);
@@ -83,6 +111,10 @@
 			dependencies = (
 			);
 			name = DTLNSampleApp;
+			packageProductDependencies = (
+				0A6D29E22B3C647500091307 /* onnxruntime */,
+				0A6D29E52B3C64CA00091307 /* OpenCV */,
+			);
 			productName = DTLNSampleApp;
 			productReference = 0A6D29CE2B3C639400091307 /* DTLNSampleApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +143,10 @@
 				Base,
 			);
 			mainGroup = 0A6D29C52B3C639400091307;
+			packageReferences = (
+				0A6D29E12B3C647500091307 /* XCRemoteSwiftPackageReference "onnxruntime" */,
+				0A6D29E42B3C64CA00091307 /* XCRemoteSwiftPackageReference "OpenCV-SPM" */,
+			);
 			productRefGroup = 0A6D29CF2B3C639400091307 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +175,12 @@
 			files = (
 				0A6D29D42B3C639400091307 /* ContentView.swift in Sources */,
 				0A6D29D22B3C639400091307 /* DTLNSampleAppApp.swift in Sources */,
+				0A6D29ED2B3C657000091307 /* AudioExtractor.swift in Sources */,
+				0A6D29EF2B3C658400091307 /* OpenCVApi.swift in Sources */,
+				0A6D29F32B3C65AD00091307 /* NoiseSuppressor.swift in Sources */,
+				0A6D29E92B3C653E00091307 /* ContentViewModel.swift in Sources */,
+				0A6D29EB2B3C655A00091307 /* AudioPlayer.swift in Sources */,
+				0A6D29F12B3C659800091307 /* PreprocessAudio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +312,8 @@
 				DEVELOPMENT_TEAM = W345THX6Y6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DTLNSampleApp/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +343,8 @@
 				DEVELOPMENT_TEAM = W345THX6Y6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DTLNSampleApp/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +385,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A6D29E12B3C647500091307 /* XCRemoteSwiftPackageReference "onnxruntime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shial4/onnxruntime";
+			requirement = {
+				branch = "szymonl/add-spm";
+				kind = branch;
+			};
+		};
+		0A6D29E42B3C64CA00091307 /* XCRemoteSwiftPackageReference "OpenCV-SPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yeatse/OpenCV-SPM.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A6D29E22B3C647500091307 /* onnxruntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A6D29E12B3C647500091307 /* XCRemoteSwiftPackageReference "onnxruntime" */;
+			productName = onnxruntime;
+		};
+		0A6D29E52B3C64CA00091307 /* OpenCV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A6D29E42B3C64CA00091307 /* XCRemoteSwiftPackageReference "OpenCV-SPM" */;
+			productName = OpenCV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A6D29C62B3C639400091307 /* Project object */;
 }
