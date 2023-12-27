@@ -34,6 +34,8 @@
 		0A6D29EE2B3C658400091307 /* OpenCVApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVApi.swift; sourceTree = "<group>"; };
 		0A6D29F02B3C659800091307 /* PreprocessAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreprocessAudio.swift; sourceTree = "<group>"; };
 		0A6D29F22B3C65AD00091307 /* NoiseSuppressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseSuppressor.swift; sourceTree = "<group>"; };
+		0A6D29F42B3C6E5B00091307 /* dnn_model_1.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = dnn_model_1.onnx; sourceTree = "<group>"; };
+		0A6D29F52B3C6E5C00091307 /* dnn_model_2.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = dnn_model_2.onnx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,8 @@
 		0A6D29D02B3C639400091307 /* DTLNSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				0A6D29F42B3C6E5B00091307 /* dnn_model_1.onnx */,
+				0A6D29F52B3C6E5C00091307 /* dnn_model_2.onnx */,
 				0A6D29E72B3C651900091307 /* Info.plist */,
 				0A6D29D12B3C639400091307 /* DTLNSampleAppApp.swift */,
 				0A6D29D32B3C639400091307 /* ContentView.swift */,
